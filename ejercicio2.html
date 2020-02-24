@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 2</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<style type="text/css">
+</head>
+<body >
+
+body{
+        min-height: 100vh;
+        margin: 0;
+        text-align: center;
+        font-family: Arial;
+        font-size: 25px;
+      }
+      input{
+        width: 200px;
+        height: 30px;
+      }
+    </style>
+
+  </head>
+  <body class="ejerc2">
+
+    <script src=js/Calcular1.js>
+
+    </script>
+  <div align="center"><a href="index.html" class="seg"> <br>2.- Un vendedor recibe un sueldo base mas un 15% extra por comision de sus ventas. <br>El vendedor desea saber cuanto dinero obtendrá por concepto de comisiones por las cinco ventas realizadas en el mes, y el total que recibirá en el mes tomando en cuenta un sueldo base y comisiones.<br><br></a>
+  </div>
+    <form method="get" name="formula" align="center">
+      <p>Ploxx, Ingrese su sueldo Base:</p>
+      <br><br>
+      <input type="number" name="sueldo" min="1" max="999999999" step="0.5">
+      <br><br>
+      <p>Now, Ingrese la cantidad de cada una de sus ventas:</p>
+      <br><br>
+      <input type="number" name="v1" min="1" max="999999999">
+      <br><br>
+      <input type="number" name="v2" min="1" max="999999999">
+      <br><br>
+      <input type="number" name="v3" min="1" max="999999999">
+      <br><br>
+      <input type="number" name="v4" min="1" max="999999999">
+      <br><br>
+      <input type="number" name="v5" min="1" max="999999999">
+      <br><br>
+      <input type="button" name="start" value="calcular" onclick="calculos()">
+      <br>
+      <hr>
+      <hr>
+      <br>
+      <div color="white">
+      <p>So, su concepto por comisiones:</p>
+      <input type="number" name="porcentaje" min="1" max="999999999" readonly="readonly">
+      <br><br>
+       <p>Y su sueldo total del mes:</p>
+      <input type="number" name="total" min="1" max="999999999" readonly="readonly"><br><br><br>
+      </div>
+    </form>
+
+
+</body>
+</html>

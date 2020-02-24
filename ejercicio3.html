@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <style type="text/css">
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(#eb9788, #ffd5ab, #fff2e5);
+        text-align: center;
+        font-family: Arial;
+        font-size: 25px;
+      }
+      input{
+        border-radius: 5px;
+      }
+      .bt{
+        height: 50px;
+        font-size: 20px;
+        width: 200px;
+        transition: background .5s;
+      }
+      .bt:hover{
+        background-color: #f1935c;
+      }
+    </style>
+
+</head>
+<body class="ejerc3">
+
+  <script src="js/Calcular2.js">
+
+  </script>
+  <div class="ejer2"><a href="index.html" class="seg">
+      3.- Una tienda ofrece un descuento del del 15% sobre el total de la compra y un cliente desea saber cuanto deberá pagar por su compra.</a><br><br><br>
+   </div>
+  <form method="get" name="formula">
+    <input type="button" name="ropa" value="Ropa y calzado" onclick="ryc()" class="bt">
+    <input type="button" name="comida" value="Comida" onclick="ryc()" class="bt">
+    <input type="button" name="tecno" value="Tecnologia" onclick="ryc()" class="bt">
+    <input type="button" name="belleza" value="Cuidado Personal" onclick="ryc()" class="bt">
+    <br><br>
+    <p>Total sin descuento:</p>
+    <input type="number" name="precio" readonly="readonly">
+    <br><br>
+    <p>Usted pagará:</p>
+    <input type="text" name="total" readonly="readonly">
+    <br><br>
+    <input type="reset" name="borrar" value="Borrar campos">
+    <br><br>
+    <input type="button" name="reiniciar" value="Reiniciar de ceros" onclick="clean()"><br><br><br>
+  </form>
+
+</body>
+</html>

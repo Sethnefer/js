@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <style type="text/css">
+      body{
+        background: url(img/Fondo6.jpg);
+        margin: 0px;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #f2f2f2;
+        font-size: 35px;
+        font-family: Arial;
+        text-align: center;
+      }
+      .bt{
+        width: 200px;
+        font-family: Verdana;
+        font-size: 25px;
+        transition: background .5s;
+      }
+      .bt:hover{
+        color:#f2f2f2;
+        background: #6c567b;
+      }
+    </style>
+
+</head>
+  <body class="ejerc6">
+
+    <script src=js/calcular6.js>
+
+    </script>
+    <div class="ejer2"><a href="index.html" class="seg">
+      6.- Realizar un algoritmo que calcule la edad de una persona<br><br><br>
+      </a>
+   </div>
+    <form method="get" name="formula">
+      Ingrese el año de naciemiento:
+      <input type="number" name="anon" min="1" max="4000">
+      <br><br>
+      Ingrese el año actual:
+      <input type="number" name="anoa" min="1000" max="99999">
+      <br><br>
+      Elija su mes de nacimiento:
+      <select name="mesn">
+        <option value="1">Enero
+        <option value="2">Febrero
+        <option value="3">Marzo
+        <option value="4">Abril
+        <option value="5">Mayo
+        <option value="6">Junio
+        <option value="7">Julio
+        <option value="8">Agosto
+        <option value="9">Septiembre
+        <option value="10">Octubre
+        <option value="11">Noviembre
+        <option value="12">Diciembre
+      </select>
+      <br><br>
+      Elija su mes actual:
+      <select name="mesa">
+        <option value="1">Enero
+        <option value="2">Febrero
+        <option value="3">Marzo
+        <option value="4">Abril
+        <option value="5">Mayo
+        <option value="6">Junio
+        <option value="7">Julio
+        <option value="8">Agosto
+        <option value="9">Septiembre
+        <option value="10">Octubre
+        <option value="11">Noviembre
+        <option value="12">Diciembre
+      </select>
+      <br><br>
+      Ingrese el dia de nacimiento:
+      <input type="number" name="dian" min="1" max=31>
+      <br><br>
+      Ingrese el dia actual:
+      <input type="number" name="diaa" min="1" max="31">
+      <br><br>
+      <input type="button" value="Calcular edad" onclick="validar()" class="bt">
+      <br><br><br>
+    </form>
+  </body>
+</html>

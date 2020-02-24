@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title>ejercicio 4</title>
+    <style type="text/css">
+      body{
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(#79bac1, #2a7886);
+        text-align: center;
+        font-family: Arial;
+        font-size: 20px;
+      }
+      input{
+        width: 155px;
+        height: 25px;
+      }
+      .bt{
+        font-family: Arial;
+        font-size: 17px;
+        transition: background .5s, color .5s;
+      }
+      .bt:hover{
+        background-color: #512b58;
+        color: #f1f3f4;
+      }
+    </style>
+
+</head>
+  <body class="ejerc4">
+
+    <script src="js/Calcular4.js">
+
+    </script>
+    <div class="ejer2"><a href="index.html" class="seg">
+      4.- Un alumno desea saber cual será su calificacion final en la materia de Algoritmos.<br>
+      Dicha calificacion se compone de los siguientes porcentajes:
+      <br>55% del promedio de sus tres calificaciones de los parciales
+      <br>30% de la calificacion del examen final
+      <br>15% de la calificacion de un trabajo final</a><br><br>
+   </div>
+    <form method="post" name="formula">
+      <p>Ingrese todas las calificaciones en un sistema del 0-10
+      <br><br>
+      Ingrese la calificacion del primer parcial:
+      <input type="number" name="p1" min="0" max="10">
+      <br><br>
+      Ingrese la calificacion del primer parcial:
+      <input type="number" name="p2" min="0" max="10">
+      <br><br>
+    Ingrese la calificacion del primer parcial:
+      <input type="number" name="p3" min="0" max="10">
+      <br><br><br>
+
+      Ingrese la calificacion del examen final:
+      <input type="number" name="examen" min="0" max="10">
+      <br><br><br>
+
+      Ingrese la calificacion del trabajo final:
+      <input type="number" name="trabajo" min="0" max="10">
+      <br><br>
+      <input type="button" name="calcular" value="Calcular" onclick="llamar()"  class="bt">
+      <br><br>
+      <input type="reset" value="Borrar"  class="bt">
+      </p>
+    </form>
+
+  </body>
+</html>
